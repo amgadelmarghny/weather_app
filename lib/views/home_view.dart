@@ -6,8 +6,8 @@ import 'package:weather/views/search_view.dart';
 import '../category/default_page.dart';
 import '../category/succes_body.dart';
 
-class HomePage extends StatelessWidget {
-  const HomePage({Key? key}) : super(key: key);
+class HomeView extends StatelessWidget {
+  const HomeView({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
@@ -32,7 +32,7 @@ class HomePage extends StatelessWidget {
                     onPressed: () {
                       Navigator.push(context,
                           MaterialPageRoute(builder: (context) {
-                        return const SearchPage();
+                        return const SearchView();
                       }));
                     },
                     icon: const Icon(Icons.search),
@@ -52,7 +52,7 @@ class HomePage extends StatelessWidget {
                   onPressed: () {
                     Navigator.push(context,
                         MaterialPageRoute(builder: (context) {
-                      return const SearchPage();
+                      return const SearchView();
                     }));
                   },
                   icon: const Icon(Icons.search),
@@ -71,7 +71,7 @@ class HomePage extends StatelessWidget {
                   onPressed: () {
                     Navigator.push(context,
                         MaterialPageRoute(builder: (context) {
-                      return const SearchPage();
+                      return const SearchView();
                     }));
                   },
                   icon: const Icon(Icons.search),
@@ -91,7 +91,7 @@ class HomePage extends StatelessWidget {
                   onPressed: () {
                     Navigator.push(context,
                         MaterialPageRoute(builder: (context) {
-                      return const SearchPage();
+                      return const SearchView();
                     }));
                   },
                   icon: const Icon(Icons.search),

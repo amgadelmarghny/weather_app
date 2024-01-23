@@ -9,13 +9,13 @@ void main() {
   runApp(
     BlocProvider(
       create: (context) => WeatherCubit(WeatherService()),
-      child: const MyApp(),
+      child: const WeatherApp(),
     ),
   );
 }
 
-class MyApp extends StatelessWidget {
-  const MyApp({Key? key}) : super(key: key);
+class WeatherApp extends StatelessWidget {
+  const WeatherApp({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
@@ -27,7 +27,7 @@ class MyApp extends StatelessWidget {
       //     : BlocProvider.of<WeatherCubit>(context).weatherModel!.getColor()
       // ),
       debugShowCheckedModeBanner: false,
-      home: HomePage(),
+      home: HomeView(),
     );
   }
 }
