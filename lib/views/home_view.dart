@@ -12,7 +12,7 @@ class HomeView extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     MaterialColor? colorThem;
-
+  
     return BlocConsumer<WeatherCubit, WeatherState>(
       listener: (context, state) {
         if (state is WeatherStateSucces) {
